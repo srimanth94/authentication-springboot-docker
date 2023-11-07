@@ -15,7 +15,7 @@ services:
   app:
     depends_on:
       - mysqldb
-    image: authentication-system-springboot:latest # Replace with your Docker image name and tag
+    image: agentsudo/authentication-system-springboot:latest # Replace with your Docker image name and tag
     env_file: ./.env
     ports:
       - $SPRING_LOCAL_PORT:$SPRING_DOCKER_PORT
